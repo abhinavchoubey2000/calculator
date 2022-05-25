@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./calculatorFavicon.png" type="image/x-icon">
+    <title>Calculate Me!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Hardy's Calculator</h1>
+    <div class="main-box">
+        <div class="screen">
+          <input type="text" id="pannel" placeholder='Calculate Me' disabled/>
+        </div>
+        <div class="layout">
+          <div class="buttons">
+            <div class="row-1">
+              <button class = "bt-button" id="col-1">1</button>
+              <button class = "bt-button" id="col-2">2</button>
+              <button class = "bt-button" id="col-3">3</button>
+              
+            </div>
+            <div class="row-2">
+              <button class = "bt-button" id="col-4">4</button>
+              <button class = "bt-button" id="col-5">5</button>
+              <button class = "bt-button" id="col-6">6</button>
+              
+            </div>
+            <div class="row-3">
+              <button class = "bt-button" id="col-7">7</button>
+              <button class = "bt-button" id="col-8">8</button>
+              <button class = "bt-button" id="col-9">9</button>
+            </div>
+          <div class="row-4">
+            <button class = "bt-button" id="col-0">0</button>
+            <button class = "bt-button" id="col-/">/</button>
+            <button class = "bt-button" id="col-%">%</button>
+          </div>
+          </div>
+          <div class="col-4">
+            <button class = "bt-button" id="col--">-</button>
+            <button class = "bt-button" id="col-*">X</button>
+            <button class = "bt-button" id="col-plus">+</button>
+          </div>
+        </div>
+        <div class="row-5">
+            <button class = "bt-button" id="col-decimal">.</button>
+            <button onclick="cl()" class = "bt-button1" id="col-clear">C</button>
+            <button onclick="clearAll()" class = "bt-button1" id="clearAll">CA</button>
+            <button onclick="equal()" class = "bt-button1" id="col-equal">=</button>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+    </body>
+</html>
